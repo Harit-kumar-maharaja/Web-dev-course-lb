@@ -1,0 +1,10 @@
+*{
+    margin: 20px;
+    padding: 0px;
+}
+
+.para{
+    font-size: 60px;
+    background-color: aqua;
+    text-align: center;
+}
