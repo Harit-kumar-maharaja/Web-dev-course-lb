@@ -1,35 +1,44 @@
-import Item from './components/Item';
+
 import './App.css';
+import Newproduct from './components/Newproduct';
+import Products from './components/Products';
 
 function App() {
 
-  const response = [
+  const products = [
     {
-      productname : "Nirma",
+      id:'p1',
+      title:'Nirma',
+      amount : '100',
+      date : new Date(2021 , 8 ,9)
     },
     {
-      productname : "Surf Excel",
+      id:'p2',
+      title:'Surf excel',
+      amount : '110',
+      date : new Date(2021 , 10 ,10)
     },
     {
-      productname : "555",
-    }
+      id:'p3',
+      title:'555',
+      amount : '100',
+      date : new Date(2021 , 7 ,29)
+    },
+    {
+      id:'p4',
+      title:'Tide',
+      amount : '80',
+      date : new Date(2021 , 3 ,19)
+    },
   ]
 
   return (
     <div>
-    <Item name={response[0].productname}/>
+    
+    <Products items = {products}/>
 
-    <div className='App'>
-      Hello JI
-    </div>
-
-    <Item name={response[1].productname}/>
-
-    <div className='App'>
-      KAISE HO
-    </div>
-
-    <Item name={response[2].productname}/>
+    <Newproduct/>
+    
     </div>
   );
 }
