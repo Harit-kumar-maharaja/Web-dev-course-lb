@@ -21,6 +21,7 @@ export function AppContextProvider({children}){
             console.log(data);
             setpage(data.page)
             setposts(data.posts)
+            settotalpages(data.totalPages);
         } catch (err) {
             console.log("error in fetching data");
             setpage(1);
